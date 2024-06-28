@@ -14,23 +14,62 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```msw
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm run mock
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
 
-## Learn More
+## libs Version
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+node -v 20.14.0
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+next -v 14
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+tanstack/react-query -v 5
 
-## Deploy on Vercel
+msw -v 2
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+redux-toolkit
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+tailWind Css
+
+Axios
+
+```
+
+## directory
+
+src/\*
+├── apis
+│  
+└── app/\*
+│ └── app routing
+│
+└── components
+│ └── 글로벌 components 작성
+│
+└── constans
+│ └── 변하지 않는 상수 값 작성
+│
+└── fonts
+│ └── 폰트 설정
+│
+└── hooks
+│ └── 글로벌 커스텀 hooks 작성
+│
+└── libs
+│ └── 리액트 쿼리 , msw 등 라이브러리 설정 파일을 작성
+│
+└── model
+│ └── 인터페이스 등 모델 작성
+│
+└── store
+│ └── redux 작성
+│
+└── styles
+│ └── 글로벌 styles 작성
+│
+└── utiils
+#####└──── 글로벌 Funcion 작성
