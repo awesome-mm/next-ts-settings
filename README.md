@@ -42,10 +42,10 @@ Axios
 ## directory
 
 ```bash
-src/\*
+src/*
 ├── apis
 │
-└── app/\*
+└── app/*
 │ └── app routing
 │
 └── components
