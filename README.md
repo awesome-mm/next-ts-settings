@@ -41,9 +41,10 @@ Axios
 
 ## directory
 
+```bash
 src/\*
 ├── apis
-│  
+│
 └── app/\*
 │ └── app routing
 │
@@ -73,3 +74,5 @@ src/\*
 │
 └── utiils
 #####└──── 글로벌 Funcion 작성
+
+```
