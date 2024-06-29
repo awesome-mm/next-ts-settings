@@ -35,4 +35,4 @@ export const {increment, decrement, incrementByAmount} = counter.actions;
 // Other code such as selectors can use the imported `RootState` type
 export const selectCount = (state: AppState) => state.counter.value;
 
-export default counter.reducer;
+export default counter;

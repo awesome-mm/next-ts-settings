@@ -1,6 +1,5 @@
 import {counter} from "./modules/counter";
 import {Action, configureStore, ThunkAction} from "@reduxjs/toolkit";
-import {createWrapper} from "next-redux-wrapper";
 
 export const store = configureStore({
   reducer: {
@@ -17,7 +16,3 @@ export type AppStore = typeof store;
 export type AppState = ReturnType<AppStore["getState"]>;
 export type AppDispatch = AppStore["dispatch"];
 export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppState, unknown, Action>;
-// import {createWrapper} from "next-redux-wrapper";
-// export const wrapper = createWrapper<AppStore>(store);
-
-// export const wrapper = createWrapper<AppStore>(store);
