@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  word-break: keep-all;
+  font-family: "Pretendard", sans-serif !important;
+}
+/* html */
+html {
+  font-size: 18px;
+}
+
+/* body */
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+}
+#content {
+  min-height: 100vh;
+  /* min-height: 600px; */
+  overflow: hidden;
+}
+
+/* 모든 텍스트를 포함하는 요소에 단어 단위 줄바꿈 적용 */
+p,
+div,
+span,
+a {
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* 최신 브라우저 대응 */
+}
+
+/* color palette */
+:root {
+  --brand-1: #024c8c;
+  --brand-2: #003b6d;
+  --brand-3: #3972a3;
+  --brand-4: #e1f0f8;
+  --brand-5: #f3fbff;
+
+  --gray-1: #2e2e2e;
+  --gray-2: #333333;
+  --gray-3: #505050;
+  --gray-4: #707070;
+  --gray-5: #a4a4a4;
+  --gray-6: #bfbfbf;
+  --gray-7: #d9d9d9;
+  --gray-8: #eeeeee;
+
+  --blue-gray-1: #aaafb9;
+  --blue-gray-2: #f8f9fa;
+
+  --table-line-1: #d6e3ea;
+  --table-line-2: #e8f0f3;
+  --table-line-3: #ebeff2;
+
+  --red-1: #c8241d;
+  --red-2: #ff3a3a;
+  --red-3: #ffd6d6;
+
+  --emerald: #00997d;
+}
+/* bmc color palette */
+.bmc_color_1 {
+  background-color: #008df4;
+}
+
+.bmc_color_2 {
+  background-color: #284255;
+}
+
+.bmc_color_3 {
+  background-color: #6dd295;
+}
+
+.bmc_color_4 {
+  background-color: #8800f4;
+}
+
+.bmc_color_5 {
+  background-color: #9e0000;
+}
+
+.bmc_color_6 {
+  background-color: #f400db;
+}
+
+.bmc_color_7 {
+  background-color: #ff4a4a;
+}
+
+.bmc_color_8 {
+  background-color: #ff9900;
+}
+
+/* 접근성 hidden */
+.hidden {
+  display: block;
+  position: absolute;
+  left: -1000%;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: #333;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* react - confrim - alert*/
+.popup-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: none;
+}
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  transition: none;
+  animation: react-confirm-alert-fadeIn 0.2s 0s forwards !important;
+}
+
+/* 버튼 */
+.MyButton {
+  border: none;
+  outline: none;
+  padding: 14px 31px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  font-family: "Pretendard", sans-serif;
+}
+.MyButton img {
+  vertical-align: middle;
+}
+.MyButton:hover {
+  opacity: 1;
+}
+
+.MyButton.MyButton_positive {
+  padding: 14px 31px;
+  background-color: var(--brand-1) !important;
+  color: #fff !important;
+}
+.MyButton.MyButton_positive2 {
+  padding: 14px 31px;
+  background-color: var(--brand-4) !important;
+  color: var(--brand-1) !important;
+}
+
+.MyButton.MyButton_negative {
+  padding: 14px 31px;
+  background-color: #eeeeee !important;
+  color: var(--gray-5) !important;
+}
+.MyButton.MyButton_normal {
+  padding: 14px 31px;
+  background-color: var(--brand-4) !important;
+  color: var(--brand-1) !important;
+}
+
+.MyButton.MyButton_cancle {
+  padding: 14px 31px;
+  background-color: #ffe3e3 !important;
+  color: var(--red-1) !important;
+}
+
+/* 에러 메세지 */
+.validate.warning {
+  color: #f44336;
+  font-size: 14px;
+}
+
+/* input type number 화살표 없애기 */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox  */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ... 표시 */
+.text_truncate {
+  /* data 길어질 때 처리  같은 태그에 width 지정 해야 함  */
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-size: 18px;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  display: flex;
+  align-items: center;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+.items-justify-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-200 {
+  font-weight: 200;
+}
+.font-weight-100 {
+  font-weight: 100;
+}
+
+/* toast ui 자간 수정 */
+.Toastify__toast-body > div:last-child {
+  line-height: 1.5;
+}
+.myTestBox {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  padding: 30px;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* 커스텀 스크롤 */
+/* 세로 */
+.customScroll-vertical::-webkit-scrollbar {
+  width: 10px;
+}
+.customScroll-vertical::-webkit-scrollbar-thumb {
+  background-color: #cbc7c7;
+  border-radius: 5px;
+}
+.customScroll-vertical::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+
+/* 가로 */
+.customScroll-horizontal::-webkit-scrollbar {
+  height: 6px;
+}
+.customScroll-horizontal::-webkit-scrollbar-thumb {
+  background-color: #cbc7c7;
+  border-radius: 5px;
+}
+.customScroll-horizontal::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+
+.navigate_transition_overlay {
+  width: 100%;
+}
+
+.navigate_transition_overlay.isHide {
+  display: none !important;
+}
+
+.requireDesc {
+  color: var(--red-1);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animatibg .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+}

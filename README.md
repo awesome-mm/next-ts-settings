@@ -37,6 +37,8 @@ tailWind Css
 
 Axios
 
+eslintrc + prettier
+
 ```
 
 ## directory
