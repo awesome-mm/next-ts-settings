@@ -1,18 +1,17 @@
+import {useSelector, useDispatch, useStore} from "react-redux";
 import {counter} from "./modules/counter";
-import {Action, configureStore, ThunkAction} from "@reduxjs/toolkit";
+import {configureStore, ThunkAction, Action} from "@reduxjs/toolkit";
 
-export const store = configureStore({
-  reducer: {
-    counter: counter.reducer,
-  },
-});
-
-// Infer the `RootState` and `AppDispatch` types from the store itself
-// export type RootState = ReturnType<typeof store.getState>;
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
-// export type AppDispatch = typeof store.dispatch;
-
-export type AppStore = typeof store;
-export type AppState = ReturnType<AppStore["getState"]>;
+export const makeStore = () => {
+  return configureStore({
+    reducer: {counter: counter.reducer},
+  });
+};
+export type AppStore = ReturnType<typeof makeStore>;
+export type RootState = ReturnType<AppStore["getState"]>;
 export type AppDispatch = AppStore["dispatch"];
-export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, AppState, unknown, Action>;
+export type AppThunk<ThunkReturnType = void> = ThunkAction<ThunkReturnType, RootState, unknown, Action>;
+
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+export const useAppSelector = useSelector.withTypes<RootState>();
+export const useAppStore = useStore.withTypes<AppStore>();

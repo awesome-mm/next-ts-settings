@@ -1,7 +1,7 @@
 "use client";
 
-import {useAppDispatch, useAppSelector} from "@/hooks/useReduxHooks";
 import {decrement, increment, incrementByAmount, selectCount} from "@/store/modules/counter";
+import {useAppDispatch, useAppSelector} from "@/store/store";
 
 export const Count = () => {
   // increment, decrement, incrementByAmount;
@@ -9,11 +9,11 @@ export const Count = () => {
   const count = useAppSelector(selectCount);
 
   return (
-    <div>
-      <button aria-label="Increment value" onClick={() => dispatch(increment())}>
+    <div className="ml-5">
+      <button aria-label="Increment value" className=" mr-4" onClick={() => dispatch(increment())}>
         Increment
       </button>
-      <span>{count}</span>
+      <span className="mr-4">{count}</span>
       <button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
         Decrement
       </button>

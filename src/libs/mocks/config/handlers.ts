@@ -15,10 +15,7 @@ const User = [
   {id: "leoturtle", nickname: "레오", image: faker.image.avatar()},
 ];
 const Posts = [];
-const delay = (ms: number) =>
-  new Promise((res) => {
-    setTimeout(res, ms);
-  });
+const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
 export const handlers = [
   http.post("/api/login", () => {

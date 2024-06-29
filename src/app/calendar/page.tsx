@@ -5,7 +5,8 @@ export default function ChargeLayout({
 }>) {
   return (
     <div>
-      <div>요급제 페이지 입니다. ㅋㅋ</div>
+      {/* <div>요급제 페이지 입니다. ㅋㅋ</div>
+      {children} */}
     </div>
   );
 }
