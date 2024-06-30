@@ -21,7 +21,7 @@ npm run mock
 
 ```
 
-## libs Version
+## Libs Version
 
 ```bash
 node -v 20.14.0
@@ -34,15 +34,15 @@ msw -v 2
 
 redux-toolkit
 
-tailWind Css
+tailWind CSS
 
-Axios
+axios
 
-eslintrc + prettier
+eslint + prettier
 
 ```
 
-## directory
+## Directory
 
 ```bash
 src/*
@@ -75,7 +75,7 @@ src/*
 └── styles
 │ └── 글로벌 styles 작성
 │
-└── utiils
+└── utils
 #####└──── 글로벌 Funcion 작성
 
 ```
