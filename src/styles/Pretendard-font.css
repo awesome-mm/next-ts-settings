@@ -4,7 +4,8 @@
   font-style: normal;
   font-display: swap;
   src: url("../assets/fonts/Pretendard/Pretendard-Light.eot");
-  src: url("../assets/fonts/Pretendard/Pretendard-Light.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("../assets/fonts/Pretendard/Pretendard-Light.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/Pretendard/Pretendard-Light.woff2") format("woff2"),
     url("../assets/fonts/Pretendard/Pretendard-Light.woff") format("woff"),
     url("../assets/fonts/Pretendard/Pretendard-Light.ttf") format("truetype");
@@ -15,7 +16,8 @@
   font-style: normal;
   font-display: swap;
   src: url("../assets/fonts/Pretendard/Pretendard-Regular.eot");
-  src: url("../assets/fonts/Pretendard/Pretendard-Regular.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("../assets/fonts/Pretendard/Pretendard-Regular.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/Pretendard/Pretendard-Regular.woff2") format("woff2"),
     url("../assets/fonts/Pretendard/Pretendard-Regular.woff") format("woff"),
     url("../assets/fonts/Pretendard/Pretendard-Regular.ttf") format("truetype");
@@ -26,7 +28,8 @@
   font-style: normal;
   font-display: swap;
   src: url("../assets/fonts/Pretendard/Pretendard-Medium.eot");
-  src: url("../assets/fonts/Pretendard/Pretendard-Medium.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("../assets/fonts/Pretendard/Pretendard-Medium.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/Pretendard/Pretendard-Medium.woff2") format("woff2"),
     url("../assets/fonts/Pretendard/Pretendard-Medium.woff") format("woff"),
     url("../assets/fonts/Pretendard/Pretendard-Medium.ttf") format("truetype");
@@ -37,7 +40,8 @@
   font-style: normal;
   font-display: swap;
   src: url("../assets/fonts/Pretendard/Pretendard-SemiBold.eot");
-  src: url("../assets/fonts/Pretendard/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("../assets/fonts/Pretendard/Pretendard-SemiBold.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/Pretendard/Pretendard-SemiBold.woff2") format("woff2"),
     url("../assets/fonts/Pretendard/Pretendard-SemiBold.woff") format("woff"),
     url("../assets/fonts/Pretendard/Pretendard-SemiBold.ttf") format("truetype");
@@ -48,7 +52,8 @@
   font-style: normal;
   font-display: swap;
   src: url("../assets/fonts/Pretendard/Pretendard-Bold.eot");
-  src: url("../assets/fonts/Pretendard/Pretendard-Bold.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("../assets/fonts/Pretendard/Pretendard-Bold.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/Pretendard/Pretendard-Bold.woff2") format("woff2"),
     url("../assets/fonts/Pretendard/Pretendard-Bold.woff") format("woff"),
     url("../assets/fonts/Pretendard/Pretendard-Bold.ttf") format("truetype");
@@ -59,7 +64,8 @@
   font-style: normal;
   font-display: swap;
   src: url("../assets/fonts/Pretendard/Pretendard-ExtraBold.eot");
-  src: url("../assets/fonts/Pretendard/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("../assets/fonts/Pretendard/Pretendard-ExtraBold.eot?#iefix") format("embedded-opentype"),
     url("../assets/fonts/Pretendard/Pretendard-ExtraBold.woff2") format("woff2"),
     url("../assets/fonts/Pretendard/Pretendard-ExtraBold.woff") format("woff"),
     url("../assets/fonts/Pretendard/Pretendard-ExtraBold.ttf") format("truetype");

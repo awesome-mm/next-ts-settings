@@ -10,12 +10,12 @@
   "trailingComma": "all",
   "singleAttributePerLine": false,
   "htmlWhitespaceSensitivity": "css",
-  "proseWrap": "preserve",
+  "proseWrap": "always",
   "insertPragma": false,
   "printWidth": 120,
   "requirePragma": false,
   "tabWidth": 2,
   "useTabs": false,
   "embeddedLanguageFormatting": "auto",
-  "endOfLine": "lf"
+  "endOfLine": "auto"
 }
